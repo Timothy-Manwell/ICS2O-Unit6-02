@@ -19,12 +19,13 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  
   if (localStorage.cookietotal) {
     localStorage.cookietotal = localStorage.cookietotal + 1
-    document.getElementById("cookie").innerHTML = "You have: " + localStorage.cookietotal + " cookies."
+    document.getElementById("cookie").innerHTML =
+      "You have: " + localStorage.cookietotal + " cookies."
   } else {
     localStorage.cookietotal = 0
-    document.getElementById("cookie").innerHTML = "You have: " + localStorage.cookietotal + " cookies."
+    document.getElementById("cookie").innerHTML =
+      "You have: " + localStorage.cookietotal + " cookies."
   }
 }
