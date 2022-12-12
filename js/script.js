@@ -19,11 +19,9 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  let localStorage,
-    cookieTotal = 0
+  let localStorage.cookieTotal = 0
 
-  localStorage, (cookieTotal = localStorage), cookieTotal + 1
+  localStorage.cookieTotal = localStorage.cookieTotal + 1
 
-  ;(document.getElementById("cookie").innerHTML = "You have: " + localStorage),
-    cookieTotal + " cookies."
+  document.getElementById("cookie").innerHTML = "You have: " + localStorage.cookieTotal + " cookies."
 }
