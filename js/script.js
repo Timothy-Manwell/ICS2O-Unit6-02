@@ -20,11 +20,7 @@ if (navigator.serviceWorker) {
  */
 function myButtonClicked() {
   if (localStorage.cookietotal) {
-    localStorage.cookietotal = localStorage.cookietotal + 1
-    document.getElementById("cookie").innerHTML =
-      "You have: " + localStorage.cookietotal + " cookies."
-  } else {
-    localStorage.cookietotal = 0
+    localStorage.cookietotal = Number(localStorage.cookietotal) + 1
     document.getElementById("cookie").innerHTML =
       "You have: " + localStorage.cookietotal + " cookies."
   }
