@@ -10,8 +10,8 @@
  * Check service worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS2O-Unit6-02/sw.js", {
+    scope: "/ICS2O-Unit6-02/",
   })
 }
 
@@ -19,5 +19,9 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  let localStorage,cookieTotal = 0
+
+  localStorage,cookieTotal = localStorage,cookieTotal + 1
+
+  document.getElementById("cookie").innerHTML = "You have: " + localStorage,cookieTotal + " cookies."
 }
