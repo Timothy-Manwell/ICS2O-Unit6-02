@@ -15,13 +15,21 @@ if (navigator.serviceWorker) {
   })
 }
 
+function onLoad() {
+  if(localStorage.cookietotal) {
+    document.getElementById("cookie").innerHTML =
+      "You have: " + localStorage.cookietotal + " cookies."
+  } else {
+    localStorage.cookietotal = 0
+    document.getElementById("cookie").innerHTML =
+    "You have: " + localStorage.cookietotal + " cookies."
+  }
+}
 /**
  * This function displays an alert.
  */
 function myButtonClicked() {
-  if (localStorage.cookietotal) {
-    localStorage.cookietotal = Number(localStorage.cookietotal) + 1
+    Number(localStorage.cookietotal) ++
     document.getElementById("cookie").innerHTML =
       "You have: " + localStorage.cookietotal + " cookies."
-  }
 }
