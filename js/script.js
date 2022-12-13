@@ -29,7 +29,7 @@ function onLoad() {
  * This function displays an alert.
  */
 function myButtonClicked() {
-    Number(localStorage.cookietotal) ++
+    localStorage.cookietotal++
     document.getElementById("cookie").innerHTML =
       "You have: " + localStorage.cookietotal + " cookies."
 }
