@@ -16,20 +16,20 @@ if (navigator.serviceWorker) {
 }
 
 function onLoad() {
-  if(localStorage.cookietotal) {
+  if (localStorage.cookietotal) {
     document.getElementById("cookie").innerHTML =
       "You have: " + localStorage.cookietotal + " cookies."
   } else {
     localStorage.cookietotal = 0
     document.getElementById("cookie").innerHTML =
-    "You have: " + localStorage.cookietotal + " cookies."
+      "You have: " + localStorage.cookietotal + " cookies."
   }
 }
 /**
  * This function displays an alert.
  */
 function myButtonClicked() {
-    localStorage.cookietotal++
-    document.getElementById("cookie").innerHTML =
-      "You have: " + localStorage.cookietotal + " cookies."
+  localStorage.cookietotal++
+  document.getElementById("cookie").innerHTML =
+    "You have: " + localStorage.cookietotal + " cookies."
 }
